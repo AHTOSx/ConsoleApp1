@@ -21,12 +21,12 @@ namespace ConsoleApp1
             double aireHexagone = CalculerAireHexagone(longueurHexagone);
             Console.WriteLine("L'aire de l'hexagone vaut " + aireHexagone);
         }
-
+        
         static double CalculerAireRectangle(double longueur, double largeur)
         {
             return longueur * largeur;
         }
-
+        //calcul l'aire de l'hexagone
         static double CalculerAireHexagone(double longueur)
         {
             double aire = ((3 * Math.Sqrt(3)) / 2) * longueur * longueur;
