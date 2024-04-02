@@ -16,15 +16,16 @@ namespace ConsoleApp1
             Console.WriteLine("L'aire vaut " + aire);
 
         }
-
+        //Calcul de l'aire du rectangle en faisant longueur x largeur
+        //longueur
+        //largeur
+        //Valeur de retour
         static double CalculerAire(double longueur, double largeur)
         {
+            
             return longueur * largeur;
         }
 
-        static double CalculerLongueur(double aire, double largeur)
-        {
-            return aire / largeur;
-        }
+       
     }
 }
