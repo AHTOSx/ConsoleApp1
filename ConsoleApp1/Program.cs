@@ -20,28 +20,30 @@ namespace ConsoleApp1
 
             double aireHexagone = CalculerAireHexagone(longueurHexagone);
             Console.WriteLine("L'aire de l'hexagone vaut " + aireHexagone);
+
+            Console.WriteLine("Entrez le rayon du cercle :");
+            double rayonCercle = Convert.ToDouble(Console.ReadLine());
+
+            double aireCercle = CalculerAireCercle(rayonCercle);
+            Console.WriteLine("L'aire du cercle vaut " + aireCercle);
         }
 
         private static double CalculerAireHexagone(double longueurHexagone)
         {
-            throw new NotImplementedException();
+            // Aire de l'hexagone = (3 * √3 * c^2) / 2
+            return (3 * Math.Sqrt(3) * Math.Pow(longueurHexagone, 2)) / 2;
         }
 
         private static double CalculerAireRectangle(double longueurRectangle, double largeurRectangle)
         {
-            throw new NotImplementedException();
+            // Aire du rectangle = longueur x largeur
+            return longueurRectangle * largeurRectangle;
         }
 
-        //Calcul de l'aire du rectangle en faisant longueur x largeur
-        //longueur
-        //largeur
-        //Valeur de retour
-        static double CalculerAire(double longueur, double largeur)
+        private static double CalculerAireCercle(double rayon)
         {
-            
-            return longueur * largeur;
+            // Aire du cercle = π * r^2
+            return Math.PI * Math.Pow(rayon, 2);
         }
-
-       
     }
 }
