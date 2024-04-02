@@ -39,7 +39,7 @@ namespace ConsoleApp1
             // Aire du rectangle = longueur x largeur
             return longueurRectangle * largeurRectangle;
         }
-
+        //calcul aire cercle
         private static double CalculerAireCercle(double rayon)
         {
             // Aire du cercle = π * r^2
